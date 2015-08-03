@@ -7,16 +7,10 @@ class String
       if prepositions.include?(word) && index != 0
         word.downcase!()
       elsif letters[0]=="m" && letters[1]=="c"
-        i=1
-        letters.each do |l|
-          if i==1
-            l.capitalize!()
-          elsif i==3
-            l.capitalize!()
-          end
-          i++
-        end
+        letters[0].capitalize!()
+        letters[2].capitalize!()
         word = letters.join("")
+        split_title[index]=word
       else
         word.capitalize!()
       end
