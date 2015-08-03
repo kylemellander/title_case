@@ -17,4 +17,9 @@ describe('String#title_case') do
   it("capitalize a preposition if first word in title") do
     expect(("the big lebowski").title_case()).to(eq("The Big Lebowski"))
   end
+
+  it("changes mixed case words into uniform style") do
+    expect(("the bIg LebOwSki").title_case()).to(eq("The Big Lebowski"))
+  end
+
 end
