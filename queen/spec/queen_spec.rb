@@ -13,4 +13,9 @@ describe("Array#queen") do
   it("Gives true if queen can attack diagonally") do
     expect([2,5].queen?([3,4])).to(eq(true))
   end
+
+  it("Gives false if queen can't attack") do
+    expect([2,5].queen?([3,8])).to(eq(false))
+  end
+
 end
