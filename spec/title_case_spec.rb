@@ -22,4 +22,8 @@ describe('String#title_case') do
     expect(("the bIg LebOwSki").title_case()).to(eq("The Big Lebowski"))
   end
 
+  it("capitalizes 3rd letter in names that start with Mc") do
+    expect(("mark mcgwire").title_case()).to(eq("Mark McGwire"))
+  end
+
 end
